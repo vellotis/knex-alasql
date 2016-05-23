@@ -1,6 +1,6 @@
 {
   "name": "knex-alasql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AlaSQL plugin dialect for knex.js",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,9 @@
   "homepage": "https://github.com/vellotis/knex-alasql#readme",
   "dependencies": {
     "alasql": "^0.2.6",
-    "knex": ">=0.11.4"
+    "knex": ">=0.11.4",
+    "lodash.assign": "^4.0.9",
+    "lodash.pick": "^4.2.1"
   },
   "peerDependencies": {
     "knex": ">=0.11.4"

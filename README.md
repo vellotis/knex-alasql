@@ -26,7 +26,12 @@ var knexClient = knex({
 	name: 'knex_database',
 	version: '1.0',
 	displayName: 'knex_database', // inherited from 'name'
-	estimatedSize: 5 * 1024 * 1024 // 5MB
+	estimatedSize: 5 * 1024 * 1024, // 5MB
+
+	// AlaSQL specific options https://github.com/agershun/alasql/wiki/AlaSQL%20Options
+	options: {
+		mysql: true
+	}
 });
 ```
 
@@ -42,6 +47,6 @@ Thank you to [@randomnerd](https://github.com/randomnerd) for proposing AlaSQL a
 
 ### Copyright and License
 
-Copyright Kaarel Raspel, 2014
+Copyright Kaarel Raspel, 2016
 
 [MIT Licence](LICENSE)

@@ -4,11 +4,19 @@
 import alasql from 'alasql'
 import Client_Postgres from 'knex/lib/dialects/postgres'
 import Knex from 'knex'
+import pick from 'lodash.pick'
+import assign from 'lodash.assign'
 const Promise = Knex.Promise
+
+const alasqlOptions = Object.keys(alasql.options);
 
 export default class Client_AlaSQL extends Client_Postgres {
   constructor(config) {
     super(config)
+    if (typeof config.options == 'object') {
+      const options = pick(config.options, alasqlOptions)
+      assign(alasql.options, options)
+    }
     this.name          = config.name || 'knex_database'
     this.version       = config.version || '1.0'
     this.displayName   = config.displayName || this.name
