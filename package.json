@@ -1,0 +1,47 @@
+{
+  "name": "knex-alasql",
+  "version": "0.0.1",
+  "description": "AlaSQL plugin dialect for knex.js",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel -L -D src/ --out-dir lib/ --source-maps=inline",
+    "prepublish": "rimraf lib && npm run babel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vellotis/knex-alasql.git"
+  },
+  "keywords": [
+    "alasql",
+    "knex",
+    "sql",
+    "db-mock"
+  ],
+  "author": {
+    "name": "Kaarel Raspel",
+    "web": "https://github.com/vellotis"
+  },
+  "bugs": {
+    "url": "https://github.com/vellotis/knex-alasql/issues"
+  },
+  "homepage": "https://github.com/vellotis/knex-alasql#readme",
+  "dependencies": {
+    "alasql": "^0.2.6",
+    "knex": ">=0.11.4"
+  },
+  "peerDependencies": {
+    "knex": ">=0.11.4"
+  },
+  "devDependencies": {
+    "babel": "^5.2.17",
+    "rimraf": "^2.5.2"
+  },
+  "files": [
+    "README.md",
+    "src/*",
+    "lib/*",
+    "index.js",
+    "LICENSE"
+  ]
+}
