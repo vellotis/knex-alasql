@@ -38,7 +38,7 @@ var knexClient = knex({
 
 ## Acknowledgements
 
-Thank you to @randomnerd for proposing AlaSQL as a dialect for knex as [PR](tgriesser/knex#1063). As well great thanks to @tgriesser and all the other knex.js contributors for building such a great query builder.
+Thank you to [@randomnerd](https://github.com/randomnerd) for proposing AlaSQL as a dialect for knex as [PR](https://github.com/tgriesser/knex/pull/1063). As well great thanks to @tgriesser and all the other knex.js contributors for building such a great query builder.
 
 ### Copyright and License
 
