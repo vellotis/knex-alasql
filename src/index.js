@@ -2,8 +2,8 @@
 // AlaSQL
 // -------
 import alasql from 'alasql'
-import Client_Postgres from 'knex/lib/dialects/postgres'
 import Knex from 'knex'
+import Client_Postgres from 'knex/lib/dialects/postgres'
 import pick from 'lodash.pick'
 import assign from 'lodash.assign'
 const Promise = Knex.Promise
