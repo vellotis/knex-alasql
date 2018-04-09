@@ -32,7 +32,7 @@ export default class Client_AlaSQL extends Client_Postgres {
 
   // Get a raw connection from the database, returning a promise with the connection object.
   acquireConnection() {
-    const completed = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       try {
         /*jslint browser: true*/
         var db = alasql.databases[this.name] || new alasql.Database(this.name)
@@ -41,9 +41,6 @@ export default class Client_AlaSQL extends Client_Postgres {
         reject(e)
       }
     })
-    return {
-      completed: completed
-    }
   }
 
   // Used to explicitly close a connection, called internally by the pool
